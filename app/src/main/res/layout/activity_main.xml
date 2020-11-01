@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/robot_name"
+            android:hint=" Input Robot Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:hint=" Description"
+            android:layout_below="@+id/robot_name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/height"
+            android:hint=" Input Height"
+            android:layout_below="@+id/description"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_id"
+            android:hint=" Search for Id"
+            android:layout_below="@+id/height"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Data"
+            android:id="@+id/button_add"
+            android:layout_below="@+id/height"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="76dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/button_update"
+            android:layout_below="@+id/imageButton"
+            android:layout_alignParentStart="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/button_delete"
+            android:layout_below="@+id/button_update"
+            android:layout_marginTop="5dp"
+            android:layout_alignStart="@+id/button_viewAll"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quick View"
+            android:id="@+id/button_viewAll"
+            android:layout_below="@id/button_delete"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data List"
+            android:id="@+id/button_list"
+            android:layout_below="@id/button_viewAll"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Take Photo"
+            android:id="@+id/imageButton"
+            android:layout_below="@+id/button_add"
+            android:onClick="launchCamera"/>
+        <ImageView
+            android:id="@+id/theImageView"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_alignTop="@id/imageButton" android:layout_marginTop="65dp"/>
+    </RelativeLayout>
+
+
+</ScrollView>
